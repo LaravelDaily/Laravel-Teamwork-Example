@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "204c6f7daeb7269ad8f81ee0af884d60",
+    "content-hash": "38b979d7dae13eece242901dfe1a1c9d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1856,6 +1856,68 @@
                 }
             ],
             "time": "2021-10-01T21:08:31+00:00"
+        },
+        {
+            "name": "mpociot/teamwork",
+            "version": "6.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mpociot/teamwork.git",
+                "reference": "f306f97b424d382c129c0cc025229085f4a946fe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mpociot/teamwork/zipball/f306f97b424d382c129c0cc025229085f4a946fe",
+                "reference": "f306f97b424d382c129c0cc025229085f4a946fe",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^6.0|^7.0|^8.0",
+                "php": "^7.2.5|^8.0"
+            },
+            "require-dev": {
+                "doctrine/dbal": "^2.10",
+                "illuminate/database": "^6.0|^7.0|^8.0",
+                "mockery/mockery": "^1.3.3",
+                "orchestra/testbench": "^4.0|^5.0|^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Mpociot\\Teamwork\\TeamworkServiceProvider"
+                    ],
+                    "aliases": {
+                        "Teamwork": "Mpociot\\Teamwork\\Facades\\Teamwork"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Mpociot\\Teamwork\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marcel Pociot",
+                    "email": "m.pociot@gmail.com"
+                }
+            ],
+            "description": "User to Team associations for the Laravel 5 Framework",
+            "homepage": "http://github.com/mpociot/teamwork",
+            "keywords": [
+                "Invite",
+                "Teams"
+            ],
+            "support": {
+                "issues": "https://github.com/mpociot/teamwork/issues",
+                "source": "https://github.com/mpociot/teamwork"
+            },
+            "time": "2021-02-16T10:12:41+00:00"
         },
         {
             "name": "nesbot/carbon",
