@@ -43,6 +43,18 @@
             </li>
 
             <li class="relative px-6 py-3">
+                <x-nav-link href="{{ route('tasks.index') }}" :active="request()->routeIs('tasks.*')">
+                    <x-slot name="icon">
+                        <svg class="w-5 h-5" viewBox="0 0 256 256"><path fill="none" d="M0 0h256v256H0z"/>
+                            <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M96 152h64M96 120h64M160 40h40a8 8 0 0 1 8 8v168a8 8 0 0 1-8 8H56a8 8 0 0 1-8-8V48a8 8 0 0 1 8-8h40"/>
+                            <path d="M88 72v-8a40 40 0 0 1 80 0v8Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+                        </svg>
+                    </x-slot>
+                    Tasks
+                </x-nav-link>
+            </li>
+
+            <li class="relative px-6 py-3">
                 <button class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800"
                         @click="toggleMultiLevelMenu" aria-haspopup="true">
                 <span class="inline-flex items-center">
