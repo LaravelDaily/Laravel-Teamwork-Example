@@ -15,6 +15,9 @@
 
                 <form method="POST" action="{{ route('register') }}">
                 @csrf
+                    @if(request()->invitation_token)
+                        <input type="hidden" name="invitation_token" value="{{ request()->invitation_token }}">
+                    @endif
 
                     <div class="mt-4">
                         <x-label for="name" :value="__('Name')"/>
@@ -66,4 +69,5 @@
                 </p>
             </div>
         </div>
+    </div>
 </x-guest-layout>
